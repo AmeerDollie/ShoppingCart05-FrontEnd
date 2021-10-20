@@ -1,0 +1,289 @@
+*
+		{ margin:0; padding:0; font-family:Century Gothic;}
+/*Body Specifications*/
+body 
+		{ background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
+		url(../Images/Background.png); height: 100vh; background-size: cover; 
+		background-position:center; margin-left: 30px; margin-right: 30px;
+		}
+	
+
+/*Navigation Bar*/		
+ul 		
+		{ float:right; list-style-type:none; margin-top:10px; }
+ul li
+		{ display: inline-block; }
+		
+ul li a 
+		{ text-decoration: none; color:#fff; padding: 5px 20px;
+		border:2px solid #fff; transition: 0.3s ease; }
+ul li a.active
+		{ background-color:#fff; color:#000; }
+		
+ul li a:hover 
+		{ background-color:#fff; color:red; }
+ul ,h2 
+{margin:10px;}
+		
+/*Logo and Main Code*/
+.Logo img 
+		{ float:left; width:270px; height:70px; }
+.main
+		{max-width:1300px; margin:auto;}
+
+/*Title and Paragraph Editing*/
+.title 
+		{ position:right; top:60%; left:50%; }
+.title h1 
+		{ color:White; font-size:40px; font-family: Century Gothic; text-align:center; }
+.para 
+		{ color:white; font-family:Century Gothic; font-size:19px; text-align:center;}
+		
+/*Form Editing*/
+.contact-form
+		{ text-align:right; color:Gold; margin:top; text-transform:uppercase;}
+.contact-form h2
+		{ color:white; font-size: 40px; text-align:center;}
+.form
+		{ color:Orange; text-align:left; margin: auto; margin-top:50px; transition: 0.7s ease-in-out; display: inline-flex; float: center;}
+#form
+{display: inline-block;}
+.form-control
+		{ width:500px; background:transparent; border:none; outline:none;
+		border-bottom:2px solid white; color:Gold; font-size:16px; margin-bottom:16px; float:center;}
+.input 
+		{height:50px;}
+form .submit
+		{ background: transparent; border-color:transparent; 
+		color: Red; font-size: 20px; font-weight:bold; 
+		letter-spacing:2px; height:50px; margin-top:25px;  }
+form .submit:hover
+		{background-color: white; cursor:pointer; }
+.title h3
+		{ text-align:center; color:White; font-size:40px; font-family: Century Gothic; }
+
+/*Gallery*/
+
+.heading h4
+		{ text-align:center; color:white; font-size:35px; 
+		font-family: Century Gothic;}
+
+.table 
+		{ margin-top:0; display: block; width: calc(100% + 30px);
+		height:300px; margin: auto; margin-left: -30px}
+
+.table table
+		{ width: 90%; margin-left: calc((100% - 920px)/2); 
+		margin-right: auto; float: center; display: block;}
+.parag , td 
+		{ float:center; color:white; font-family:Century Gothic; font-size:18px; }
+		
+/*About Page*/
+h5 
+	{ text-align:center; color:	White; font-size:25px; font-family: Century Gothic; }
+	
+/*Marquee*/	
+marquee
+		{margin-left: -30px; margin-right: -30px;;}
+
+.footerU {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
+td 
+{
+vertical-align:top;	
+}
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+	*{
+		margin: 0;
+		padding: 0;
+		color: #454545;
+	}
+	h1{
+		width: 3%;
+	    position: relative;
+	    top: 60px;
+	    left: 90%;
+	    cursor: pointer;
+	}
+	h1:before{
+		content: attr(data-count);
+	    color: white;
+	    position: absolute;
+	    right: 16px;
+	    font-size: 15px;
+	    text-align: center;
+	    top: -12px;
+	    width: 20px;
+	    height: 20px;
+	    background: red;
+	    border-radius: 50%;
+	    opacity: 0;
+	}
+	h1.zero:before{
+		opacity: 1;
+	}
+		section{
+			margin: 100px auto;
+			width: 90%;
+			height: 400px;
+			display: flex;
+			justify-content: space-around;
+		}
+		section div{
+			width: 22%;
+			height: 93%;
+			background:#f5f5f5;
+			padding: 1%;
+			position: relative;
+		}
+		img{
+			width: 300px;
+			height: 186px;
+		}
+
+		p{
+			margin: 5px;
+		}
+		h6{
+		    width: 50px;
+		    padding: 5px;
+		    margin: 10px;
+		    font-size: 15px;
+		}
+		button{
+			padding: 5px;
+		    background: red;
+		    border: none;
+		    outline: none;
+		    font-weight: bold;
+		    color: #fafafa;
+		    cursor: pointer;
+		}
+		section div span{
+			position: absolute;
+		    top: 14px;
+		    left: 13px;
+		    background: red;
+		    width: 300px;
+		    height: 186px;
+		    display: none;
+		}
+		section div span img{
+			width: 100%;
+			height: 100%;
+		}
+		section div:nth-child(1)>span.active{
+			animation: first 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		section div:nth-child(2)>span.active{
+			animation: second 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		section div:nth-child(3)>span.active{
+			animation: third 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		section div:nth-child(4)>span.active{
+			animation: four 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		@keyframes first{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 1290px;
+			    top: -70px;
+			}
+		}
+		@keyframes second{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 948px;
+			    top: -70px;
+			}
+		}
+		@keyframes third{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 606px;
+			    top: -70px;
+			}
+		}
+		@keyframes four{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 265px;
+			    top: -70px;
+			}
+		}
+
+
+		
+		.select{
+			width: 60%;
+			height: 580px;
+			padding: 5%;
+			background: #222;
+			position: absolute;
+			top: -1000px;
+			left: 20%;
+			transition: 0.5s;
+			overflow-y: auto;
+			margin: auto;
+		}
+		.select.display{
+			top: 10px;
+		}
+		.select div{
+			width: 100%;
+			height: 200px;
+			display: flex;
+			padding: 5px;
+			border: 1px solid white;
+			position: relative;
+			margin: 5px auto;
+		}
+		.select div img{
+			width: 300px;
+			height: 100%;
+		}
+		.select div p{
+			padding: 35px;
+			color: white;
+		}
+		.select div h6,
+		.select div button{
+			position: absolute;
+			left: 45%;
+			top: 50%;
+			color: white;
+		}
+		.select div button{
+			left: 60%;
+			top: 55%;
+		}
+		.select div span{
+			display: none;
+		}
+		
